@@ -1,32 +1,41 @@
-# End-to-End Sales Analytics Project using SQL Server and Power BI
+# AdventureWorks End-to-End Sales Analytics
 
-## Project Overview
+## Overview
 
-This project analyzes sales performance, customer behavior, and business trends using SQL Server, Power BI, and DAX.
+This project delivers a complete Business Intelligence solution using SQL Server and Power BI to analyze sales performance, customer behavior, product profitability, and business growth trends.
 
-The project follows a complete analytics workflow:
-
-* Data Modeling
-* Data Analysis using SQL
-* KPI Development using DAX
-* Interactive Dashboard Development in Power BI
-* Business Insights Generation
+The solution follows an end-to-end analytics workflow starting from data preparation and modeling through advanced SQL analysis, DAX calculations, and interactive dashboard development.
 
 ---
 
-## Tools & Technologies
+## Objectives
+
+The project aims to answer key business questions:
+
+* Which products generate the highest revenue?
+* Which products generate losses despite high sales?
+* Who are the most valuable customers?
+* Which product categories contribute the most to overall sales?
+* How do sales perform across different periods?
+* What are the key growth trends over time?
+* Which regions and customer segments drive business performance?
+
+---
+
+## Technology Stack
 
 * SQL Server
 * Power BI
 * DAX
+* Power Query
+* Excel
 * Data Modeling
-* Business Intelligence
 
 ---
 
-## Data Model
+## Data Modeling
 
-The project uses a Star Schema model consisting of:
+A Star Schema model was implemented to improve reporting performance and analytical flexibility.
 
 ### Fact Table
 
@@ -34,54 +43,91 @@ The project uses a Star Schema model consisting of:
 
 ### Dimension Tables
 
-* DimCustomers
 * DimProducts
+* DimCustomers
 * DimDate
+
+The model supports advanced filtering, drill-through functionality, and time intelligence calculations.
 
 ---
 
-## Dashboard Pages
+## SQL Analysis
 
-### 1. Product Analysis
+Advanced SQL analysis was performed using SQL Server.
 
-Key metrics and product performance analysis:
+### SQL Concepts Applied
+
+* Data Cleaning
+* Views
+* Aggregate Functions
+* GROUP BY
+* ORDER BY
+* Common Table Expressions (CTE)
+* Subqueries
+* Window Functions
+* RANK()
+* LAG()
+* HAVING Clause
+
+### Business Analysis Performed
+
+* Overall Sales Performance
+* Category Profitability Analysis
+* Product Performance Analysis
+* Customer Revenue Analysis
+* Regional Sales Analysis
+* Top Products Ranking
+* Above-Average Product Identification
+* Year-over-Year Sales Comparison
+
+---
+
+## Power BI Dashboards
+
+### Product Analysis
+
+Key metrics:
 
 * Total Sales
 * Total Quantity
 * Total Orders
 * Average Order Value (AOV)
+
+Visuals:
+
 * Sales by Product Line
 * Sales by Subcategory
 * Top Products by Sales
+* Product Drill-Through Analysis
 
 ---
 
-### 2. Customers Analysis
+### Customer Analysis
 
-Customer behavior and segmentation analysis:
+Customer-focused insights:
 
 * Customers by Country
 * Customers by Marital Status
 * Top Customers by Sales
-* Customer Trends
+* Customer Growth Trends
 
 ---
 
-### 3. Trend Analysis
+### Trend Analysis
 
-Time-series and business performance analysis:
+Time Intelligence Dashboard:
 
 * Annual Sales Trend
 * Orders vs Sales Trend
 * Quarterly Sales Analysis
-* Quantity Trend by Month
+* Monthly Quantity Trend
 * Year-over-Year Growth Analysis
 
 ---
 
 ## DAX Measures
 
-Key measures developed in Power BI:
+The project includes custom DAX calculations such as:
 
 * Total Sales
 * Total Orders
@@ -95,38 +141,32 @@ Key measures developed in Power BI:
 
 ---
 
-## SQL Analysis
-
-The project includes advanced SQL queries covering:
-
-* JOINs
-* Aggregations
-* Subqueries
-* Common Table Expressions (CTE)
-* Window Functions
-* Ranking Functions
-
-Business questions answered:
-
-* What are the top-selling products?
-* Which product lines generate the highest revenue?
-* Which countries contribute the most customers?
-* How do sales perform across years and quarters?
-* Which customers generate the highest revenue?
-
----
-
 ## Key Insights
 
 * Q4 generated the highest sales performance.
-* Sales showed significant growth in 2013 compared to 2012.
+* Sales growth accelerated significantly in 2013.
 * The United States contributed the largest customer base.
-* Product performance varied significantly across product lines.
+* Product profitability varies significantly across categories.
+* Several products generated negative profit despite strong sales revenue.
 * Sales and order volume demonstrated a strong positive relationship.
+* A small group of customers generated a large share of total revenue.
+
+---
+
+## Repository Contents
+
+* Power BI Dashboard (.pbix)
+* SQL Analysis Queries
+* Data Model Screenshot
+* Product Analysis Dashboard
+* Customer Analysis Dashboard
+* Trend Analysis Dashboard
+* Drill-Through Report
 
 ---
 
 ## Author
 
 Mohamed Afify
-Data Analytics Portfolio Project
+
+Data Analyst | Power BI Developer | SQL Analyst
