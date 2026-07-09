@@ -1,4 +1,4 @@
-# AdventureWorks End-to-End Sales Analytics
+# Retail Sales Intelligence & Performance Analytics 
 
 ## Overview
 
